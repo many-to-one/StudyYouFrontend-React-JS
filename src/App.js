@@ -13,6 +13,7 @@ import Register from './components/pages/Register';
 import Profile from './components/pages/Profile';
 import RequestResetMail from './components/pages/RequestResetMail';
 import PasswordReseteComplete from './components/pages/PasswordReseteComplete';
+import CreateEvent from './components/backend_app_pages/CreateEvent';
 
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
       <BrowserRouter>
         <Header/>
         <Routes>
+
           <Route path='/register' exact element={<Register/>} />
           <Route path='/' exact element={<Login/>} />
           <Route path='/logout' exact element={<Logout/>} />
@@ -28,6 +30,9 @@ function App() {
           <Route path='/profile' exact element={<Profile/>} />
           <Route path='/request-reset-email' exact element={<RequestResetMail />} />
           <Route path='/password-reset-complete' exact element={<PasswordReseteComplete />} />
+
+          <Route path='/create-event' exact element={<CreateEvent />} />
+
         </Routes>
       </BrowserRouter>
     </div>

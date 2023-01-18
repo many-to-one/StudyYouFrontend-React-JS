@@ -1,14 +1,11 @@
 import { React } from 'react'
 import { Link } from 'react-router-dom'
 import { isAuthenticated } from '../services/AuthService';
-import '../styles_css/Header.css';
-
-
-  
+import '../styles_css/Header.css';  
 
 const Header = () => {
 
-    const {username} = isAuthenticated()
+    const {username} = isAuthenticated();
 
 	console.log('username:', username);
 
