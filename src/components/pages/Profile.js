@@ -1,5 +1,6 @@
 import { React, useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
+import '../../styles_css/Profile.css';
 
 const Profile = () => {
 
@@ -18,7 +19,7 @@ const Profile = () => {
 
   return (
 
-    <div>
+    <div className='profile-cont'>
       <p>{user.username}</p>
       <p>{user.email}</p>
       <p>If you whant to change password

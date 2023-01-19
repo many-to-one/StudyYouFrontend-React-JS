@@ -1,0 +1,137 @@
+@media only screen and (min-width: 600px) {
+
+    .main-cont {
+        background-color: black;
+    }
+    
+    .signup-cont {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; 
+    } 
+    
+    .signup {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20%;
+    }
+    
+    input {
+        border: none;
+        outline: 0;
+        color: rgb(211, 187, 126);
+        border-bottom: 1px solid #F0007F;
+        background: none;
+        padding: 5px 10px;
+        margin-top: 20px;
+        width: 300px;
+    }
+    
+    input:-webkit-autofill,
+    input:-webkit-autofill:hover,
+    input:-webkit-autofill:focus {
+        -webkit-box-shadow: 0 0 0px 40rem rgb(0, 0, 0) inset;
+        -webkit-text-fill-color: rgb(211, 187, 126);
+    }
+    
+    .signupBtn {
+        margin-top: 50px;
+        width: 320px;
+        height: 40px;
+        background: none;
+        border-color: #F0007F;
+        border-radius: 20px;
+        cursor: pointer;
+        color: rgb(211, 187, 126);
+        font-size: 15px;
+        font-weight: bold;
+        letter-spacing: 3px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    
+    .login-cont {
+        display: flex;
+        gap: 20px;
+    }
+    
+    form p {
+        color: rgb(211, 187, 126);
+    }
+    
+    #login {
+        color: aliceblue;
+    }
+
+}
+
+@media only screen and (max-width: 600px) {
+
+    .main-cont {
+        background-color: black;
+    }
+    
+    .signup-cont {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; 
+    } 
+    
+    .signup {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20%;
+    }
+    
+    input {
+        border: none;
+        outline: 0;
+        color: rgb(211, 187, 126);
+        border-bottom: 1px solid #F0007F;
+        background: none;
+        padding: 5px 10px;
+        margin-top: 20px;
+        width: 200px;
+    }
+    
+    input:-webkit-autofill,
+    input:-webkit-autofill:hover,
+    input:-webkit-autofill:focus {
+        -webkit-box-shadow: 0 0 0px 40rem rgb(0, 0, 0) inset;
+        -webkit-text-fill-color: rgb(211, 187, 126);
+    }
+    
+    .signupBtn {
+        margin-top: 50px;
+        width: 220px;
+        height: 40px;
+        background: none;
+        border-color: #F0007F;
+        border-radius: 20px;
+        cursor: pointer;
+        color: rgb(211, 187, 126);
+        font-size: 15px;
+        font-weight: bold;
+        letter-spacing: 3px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    
+    .login-cont {
+        display: flex;
+        gap: 20px;
+    }
+    
+    form p {
+        color: rgb(211, 187, 126);
+    }
+    
+    #login {
+        color: aliceblue;
+    }
+
+}

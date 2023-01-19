@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom';
 import { login } from '../../services/AuthService';
+import '../../styles_css/Auth.css';
 
 const Login = () => {
 
@@ -20,8 +21,10 @@ const Login = () => {
     };
 
   return (
-    <div className='auth-cont' onSubmit={submit}>
-      <form className='auth-form'>
+    <div className='main-cont' onSubmit={submit}>
+      <div className='signup-cont'>
+
+      <form className='signup'>
         <input
           type='email'
           name='email'
@@ -38,17 +41,26 @@ const Login = () => {
           required
           onChange={(e) => setPassword(e.target.value)}
         />
-        <button className='auth-btn'>
+        <button className='signupBtn'>
           Login
         </button>
       </form>
 
         <div>
-          <p>Don't have an account?
-          <Link to={'/register'}>Register</Link>
+          <p>
+            Don't have an account?{" "}
+            <button className='event-btn'>
+                <Link 
+                to={"/register"}
+                style={{textDecoration: 'none'}}
+                >
+                    <p>REGISTER</p>
+                </Link>
+            </button> 
           </p>
         </div>
 
+      </div>
     </div>
 
   )

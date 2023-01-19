@@ -1,0 +1,138 @@
+@media only screen and (min-width: 600px) and (max-width: 2000px) {
+
+    .y{
+      margin-top: 25vh;
+    }
+  
+  }
+  
+  @media only screen and (max-width: 600px) {
+  
+    .y{
+      margin-top: 10vh;
+    }
+  
+  }
+  
+  .event-list-cont {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+  }
+  
+  .username {
+    color: aliceblue;
+    margin-top: 150px;
+  }
+  
+  .btn-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    gap: 50px;
+  }
+  
+  .event-btn {
+    background: none;
+    border: 0;
+    cursor: pointer;
+  }
+  
+  /* ###################### EVENT PAGE ######################## */
+  
+  @media only screen and (min-width: 600px) and (max-width: 2000px) {
+  
+    #update-back {
+      margin-top: 15vh;
+    }
+  
+    .event-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+    }
+  
+    .event-container p {
+      color: white;
+    }
+  
+    .event-container label {
+      color: beige;
+      font-style: italic;
+      margin-right: 65vw;
+    }
+    
+    .text-event {
+      width: 100%;
+      min-width: 20vw;
+      max-width: 70vw;
+      height: auto;
+      min-height: 50px;
+      background-color: #282c34;
+      border: none;
+      border-radius: 10px;
+      outline: none;
+      color: white;
+    }
+    
+    .event-btn-submit {
+      background: none;
+      border: 0;
+      cursor: pointer;
+      margin-left: 45%;
+    }
+  
+  }
+  
+  @media only screen and (max-width: 600px) {
+  
+    #update-back {
+      margin-top: 15vh;
+    }
+  
+    .event-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+    }
+    
+    .event-container label {
+      color: beige;
+      font-style: italic;
+      align-self: flex-start;
+      margin-left: 12vw;
+    }
+  
+    .res-btn-cont {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  
+    .text-event {
+      width: 100%;
+      min-width: 20vw;
+      max-width: 77vw;
+      height: auto;
+      min-height: 50px;
+      background-color: #282c34;
+      border: none;
+      outline: none;
+      color: white;
+      border-radius: 10px;
+    }
+    
+    .event-btn-submit {
+      background: none;
+      border: 0;
+      cursor: pointer;
+      margin-left: 45%;
+    }
+    
+  
+  }

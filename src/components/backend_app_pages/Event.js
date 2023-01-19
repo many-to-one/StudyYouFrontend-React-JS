@@ -2,10 +2,11 @@ import React from 'react'
 import { Link, useParams } from 'react-router-dom'
 import { Navigate } from 'react-router-dom';
 import { MdDelete } from 'react-icons/md'
+import '../../styles_css/Event.css';
 
 
 
-const ListItem = ({ev}) => {
+const Event = ({ev}) => {
 
   const { id } = useParams();
 
@@ -51,4 +52,4 @@ const deleteEvent = async () => {
   )
 }
 
-export default ListItem
+export default Event

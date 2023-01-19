@@ -1,0 +1,83 @@
+@media only screen and (min-width: 600px) and (max-width: 2000px) {
+
+    .list-item-container {
+      display: flex;
+      flex-direction: row;
+      margin-top: 20px;
+      align-items: center;
+      justify-content: space-between;
+      height: 10vh;
+      border: 1px solid rgb(32, 32, 32);
+      border-radius: 10px;
+      background-color: #282c34;
+      transition: all ease-in-out .4s;
+    }
+    
+    .list-item-container:hover {
+      background-color: #464c58;
+    }
+    
+    .list-item-container-mini {
+      display: flex;
+      flex-direction: column;
+      margin-left: 10px;
+      min-width: 65vw;
+    }
+    
+    .list-item h1{
+      font-size: 15px;
+      color: whitesmoke;
+    }
+    
+    .list-item p{
+      font-size: 15px;
+      color: whitesmoke;
+    }
+  
+  }
+  
+  
+  
+  @media all and (max-width: 600px) {
+  
+    .list-item-container {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      height: 7vh;
+      border: 1px solid rgb(32, 32, 32);
+      border-radius: 10px;
+      background-color: #282c34;
+      transition: all ease-in-out .4s;
+      margin-top: 12px;
+    }
+    
+    .list-item-container:hover {
+      background-color: #464c58;
+    }
+    
+    .list-item-container-mini {
+      display: flex;
+      flex-direction: column;
+      margin-left: 10px;
+      min-width: 60vw;
+    }
+  
+    .list-item {
+      height: 3vh;
+      margin-top: -12px;
+    }
+    
+    .list-item h1{
+      font-size: 15px;
+      color: whitesmoke;
+      margin-top: -2px;
+    }
+    
+    .list-item p{
+      font-size: 15px;
+      color: whitesmoke;
+    }
+    
+  }

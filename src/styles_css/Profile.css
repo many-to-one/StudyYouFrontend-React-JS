@@ -1,0 +1,31 @@
+@media only screen and (min-width: 600px) {
+
+    .profile-cont {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 25vh;
+        margin-left: 10vw;
+    }
+    
+    .profile-cont p {
+        color: rgb(211, 187, 126);
+    }
+
+}
+
+@media only screen and (max-width: 600px) {
+
+    .profile-cont {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 8vh;
+        margin-left: 10vw;
+    }
+    
+    .profile-cont p {
+        color: rgb(211, 187, 126);
+    }
+
+}

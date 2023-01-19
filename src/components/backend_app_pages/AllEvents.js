@@ -3,6 +3,7 @@ import { isAuthenticated } from '../../services/AuthService'
 import AddButton from '../buttons/AddButton';
 import { RiDeleteBack2Fill } from 'react-icons/ri'
 import Event from "./Event";
+import '../../styles_css/AllEvents.css';
 
 
 const AllEvents = () => {
