@@ -23,7 +23,7 @@ const deleteEvent = async () => {
 };
 
   return (
-    <Link to={`/events/${ev.id}`}>
+    <Link to={`/create-event/${ev.id}`}>
     <div className='list-item-container'>
       
       <div className='list-item-container-mini'>

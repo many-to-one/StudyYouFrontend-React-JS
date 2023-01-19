@@ -31,7 +31,7 @@ function App() {
           <Route path='/request-reset-email' exact element={<RequestResetMail />} />
           <Route path='/password-reset-complete' exact element={<PasswordReseteComplete />} />
 
-          <Route path='/create-event' exact element={<CreateEvent />} />
+          <Route path='/create-event/:id' exact element={<CreateEvent />} />
 
         </Routes>
       </BrowserRouter>

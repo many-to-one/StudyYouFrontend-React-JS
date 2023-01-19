@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { isAuthenticated } from '../../services/AuthService';
 import { Link, useParams } from 'react-router-dom'
 import { MdDoneAll, MdArrowBackIosNew } from 'react-icons/md'
@@ -12,11 +12,22 @@ const CreateEvent = () => {
     const { id } = useParams();
     const navigate = useNavigate();
 
+    useEffect(() => {
+        getEvent()
+    }, [])
+
+    const getEvent = async () => {
+        const response = await fetch(`/backend/events/${id}/${data.id}/`)
+        const resp = await response.json()
+        setEvent(resp)
+        console.log(resp)
+    };
+
     const create = async() => {
 
         // e.preventDefault();
 
-        await fetch(`backend/event/create/${data.id}/`, {
+        await fetch(`/backend/event/create/${data.id}/`, {
             method: 'POST',
             body: JSON.stringify(event),
             headers: {
@@ -28,7 +39,7 @@ const CreateEvent = () => {
     }
 
     const update = async () => {
-        fetch(`/backend/events/${id}/${data.id}/update/`, {
+        await fetch(`/backend/events/${id}/${data.id}/update/`, {
             method: 'PUT',
             body:JSON.stringify(event),
             headers: {
@@ -42,13 +53,13 @@ const CreateEvent = () => {
 
 
     const handleSubmit = () => {
-        create()
-        // if(id !== 'new') {
-        //     update()
-        // } else if(id === 'new' && event !== null) {
-        //     create()
-        // };
-        // navigate("/")
+
+        if(id !== 'new') {
+            update()
+        } else if(id === 'new' && event !== null) {
+            create()
+        };
+        navigate("/home")
     } 
 
     // ################### END OF BUTTON ONCLICK FUNCTION ################### // 
@@ -57,7 +68,7 @@ const CreateEvent = () => {
     return (
         <div className='event'>
 
-            <Link  to={'/'}>
+            <Link  to={'/home'}>
                 <button 
                     className="event-btn"
                     id='update-back'

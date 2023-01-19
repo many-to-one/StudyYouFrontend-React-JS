@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 const AddButton = () => {
   return (
     <div>
-      <Link to={"/create-event"}>
+      <Link to={"/create-event/new/"}>
         <IoMdAddCircle 
           style={{
             width: "50px",
