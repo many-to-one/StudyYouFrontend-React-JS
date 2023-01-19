@@ -35,8 +35,10 @@ export const login = async (email, password) => {
       });
 
       const data = await response.json()
+      console.log('data:', data)
   
       if (response.status === 200) {
+        localStorage.setItem('id', data.id)
         localStorage.setItem('email', data.email)
         localStorage.setItem('username', data.username)
         localStorage.setItem('token', data.jwt)
@@ -75,6 +77,7 @@ export const passwordResetService = async(uidb64, token) => {
 
 
 export const isAuthenticated = () => {
+    const id = localStorage.getItem('id');
 	  const username = localStorage.getItem('username');
     const email = localStorage.getItem('email');
     const token = localStorage.getItem('token');
@@ -82,6 +85,7 @@ export const isAuthenticated = () => {
     const tokenServise = localStorage.getItem('tokenServise');
 
     let data = {
+        id: id,
         email: email,
         username: username,
         token: token,

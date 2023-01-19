@@ -7,7 +7,7 @@ import '../../styles_css/CreateEvent.css';
 
 const CreateEvent = () => {
 
-    const {userId} = isAuthenticated();
+    const data = isAuthenticated();
     const [ event, setEvent ] = useState({name: {}});
     const { id } = useParams();
     const navigate = useNavigate();
@@ -16,18 +16,19 @@ const CreateEvent = () => {
 
         // e.preventDefault();
 
-        await fetch(`backend/event/create/${userId}/`, {
+        await fetch(`backend/event/create/${data.id}/`, {
             method: 'POST',
             body: JSON.stringify(event),
             headers: {
                 'Content-Type': 'application/json'
             },
         })
+        console.log('userId:', data.id)
 
     }
 
     const update = async () => {
-        fetch(`/backend/events/${id}/${userId}/update/`, {
+        fetch(`/backend/events/${id}/${data.id}/update/`, {
             method: 'PUT',
             body:JSON.stringify(event),
             headers: {
@@ -41,12 +42,13 @@ const CreateEvent = () => {
 
 
     const handleSubmit = () => {
-        if(id !== 'new') {
-            update()
-        } else if(id === 'new' && event !== null) {
-            create()
-        };
-        navigate("/")
+        create()
+        // if(id !== 'new') {
+        //     update()
+        // } else if(id === 'new' && event !== null) {
+        //     create()
+        // };
+        // navigate("/")
     } 
 
     // ################### END OF BUTTON ONCLICK FUNCTION ################### // 

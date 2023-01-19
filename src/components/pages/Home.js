@@ -1,19 +1,20 @@
 import React from 'react'
 import { isAuthenticated } from '../../services/AuthService'
-// import '../buttons/AddButton.js'
+import AllEvents from '../backend_app_pages/AllEvents';
+import AddButton from '../buttons/AddButton'
 import { Tast } from '../buttons/Test';
 
 const Home = () => {
 
-  const {token} = isAuthenticated();
-  const usersToken = token
-  const {tast} = Tast
+  const data = isAuthenticated();
+  const usersToken = data.token
+  console.log('data:', data)
 
-  if(usersToken == token) {
+
+  if(usersToken == data.token) {
     return (
       <div>
-        <p>Home</p>
-        {/* <AddButton /> */}
+        <AllEvents/>
       </div>
   
     )
