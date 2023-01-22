@@ -8,7 +8,7 @@ import '../../styles_css/AllEvents.css';
 
 const AllEvents = () => {
 
-    const data = isAuthenticated();
+    const {id} = isAuthenticated();
     const [events, setEvents] = useState([])
 
     useEffect(() => {
@@ -17,7 +17,7 @@ const AllEvents = () => {
         
 
     const allEvents = async() => {
-        const response = await fetch(`/backend/events/${data.id}/`)
+        const response = await fetch(`/backend/events/${id}/`)
         const resp = await response.json();
         setEvents(resp)
         console.log(events)

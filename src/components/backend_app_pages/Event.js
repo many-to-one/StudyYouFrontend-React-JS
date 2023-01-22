@@ -1,6 +1,5 @@
 import React from 'react'
 import { Link, useParams } from 'react-router-dom'
-import { Navigate } from 'react-router-dom';
 import { MdDelete } from 'react-icons/md'
 import '../../styles_css/Event.css';
 

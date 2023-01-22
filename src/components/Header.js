@@ -109,30 +109,112 @@ const Header = () => {
             <div className='nav-links-cont'>
 
               <div className='header'>
-                {auth_choise}
+                  <button className='event-btn' onClick={() => setIsMobile(!isMobile)}>
+                    <Link 
+                    to={"/profile"}
+                    style={{textDecoration: 'none'}}
+                    >
+                      <div 
+                        className='h-result'
+                        >
+                          <FaUserCircle 
+                            style={{
+                              width: "30px",
+                              height: "50px",
+                              color: "#F0007F",
+                            }}
+                          /> 
+                          <p>Hi {username}</p>
+                      </div>
+                    </Link>
+                  </button>
+                </div> 
+
+              <div className='header'>
+                <button className='event-btn' onClick={() => setIsMobile(!isMobile)}>
+                  <Link 
+                  to={"/home"}
+                  style={{textDecoration: 'none'}}
+                  >
+                    <div className='h-result'> 
+                      <AiFillHome 
+                        style={{
+                          width: "30px",
+                          height: "50px",
+                          color: "#F0007F",
+                        }}
+                      /> 
+                      <p>Home</p>
+                    </div>
+                  </Link>
+                </button> 
               </div>
 
               <div className='header'>
                 <button className='event-btn' onClick={() => setIsMobile(!isMobile)}>
                   <Link 
-                  to={"/profile"}
+                  to={"/result"}
                   style={{textDecoration: 'none'}}
                   >
                     <div 
                       className='h-result'
                       >
-                        <FaUserCircle 
-                          style={{
-                            width: "30px",
-                            height: "50px",
-                            color: "#F0007F",
-                          }}
-                        /> 
-                        <p>Hi {username}</p>
+                      <FaUserCircle 
+                        style={{
+                          width: "30px",
+                          height: "50px",
+                          color: "#F0007F",
+                        }}
+                      /> 
+                      <p>Result</p>
                     </div>
                   </Link>
                 </button>
               </div> 
+
+              <div className='header'>
+                <button className='event-btn' onClick={() => setIsMobile(!isMobile)}>
+                  <Link 
+                  to={"/all_months"}
+                  style={{textDecoration: 'none'}}
+                  >
+                    <div className='h-result'> 
+                      <BsReverseLayoutTextWindowReverse 
+                        style={{
+                          width: "30px",
+                          height: "50px",
+                          color: "#F0007F",
+                        }}
+                      /> 
+                      <p>All months</p>
+                    </div>
+                  </Link>
+                </button>
+              </div>
+
+              <div className='header'>
+                <button className='event-btn' onClick={() => setIsMobile(!isMobile)}>
+                  <Link 
+                  to={"/events_history"}
+                  style={{textDecoration: 'none'}}
+                  >
+                    <div className='h-result'> 
+                      <GiArchiveResearch 
+                        style={{
+                          width: "30px",
+                          height: "50px",
+                          color: "#F0007F",
+                        }}
+                      /> 
+                      <p>History</p>
+                    </div>
+                  </Link>
+                </button> 
+              </div>
+
+              <div className='header'>
+                {auth_choise}
+              </div>
 
             </div>
 

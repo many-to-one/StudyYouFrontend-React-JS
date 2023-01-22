@@ -35,6 +35,7 @@ const CreateEvent = () => {
             },
         })
         console.log('userId:', data.id)
+        navigate("/home")
 
     }
 
@@ -46,6 +47,7 @@ const CreateEvent = () => {
                 'Content-Type': 'application/json'
             },
         })
+        navigate("/home")
     };
 
     
@@ -59,7 +61,6 @@ const CreateEvent = () => {
         } else if(id === 'new' && event !== null) {
             create()
         };
-        navigate("/home")
     } 
 
     // ################### END OF BUTTON ONCLICK FUNCTION ################### // 

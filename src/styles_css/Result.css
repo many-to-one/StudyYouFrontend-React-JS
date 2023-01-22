@@ -1,0 +1,169 @@
+@media only screen and (min-width: 600px) and (max-width: 2000px) {
+
+    .event-btn-back {
+      margin-top: 10vh;
+    }
+  
+    .date-del-cont {
+      display: flex;
+      align-items: center;
+      margin-left: -75px;
+      gap: 30px;
+    }
+  
+    .result-container-main p { 
+      color: aliceblue;
+      font-size: 20px;
+      font-family: 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    
+    .row {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-evenly;
+      margin-top: 20px;
+    }
+  
+    .res-btn-cont {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  
+    #back {
+      margin-top: 22vh;
+    }
+  
+    #archivate {
+      margin-top: 22vh;
+      margin-left: -10vw;
+    }
+  
+    .result-container-main {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  
+    .month {
+      color: aliceblue;
+      margin-left: 35vw;
+      font-size: 40px;
+    }
+    
+  
+    .left {
+      min-width: 60vw;
+      height: 10vh;
+      background-color: #282c34;
+      border-radius: 10px;
+    }
+    
+    .left p {
+      margin-top: 12px;
+      margin-left: 12px;
+    }
+    
+    .right {
+      width: 100%;
+      max-width: 10vw;
+      height: 10vh;
+      background-color: #282c34;
+      border-radius: 10px;
+    }
+    
+    .right p {
+      margin-top: 12px;
+      margin-left: 3.7vw;
+    }
+  
+  }
+  
+  @media only screen and (max-width: 600px) {
+  
+    .result-container-main p {
+      margin: -10vh 0;
+      color: aliceblue;
+      font-size: 15px;
+      font-family: 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+  
+    .date-del-cont {
+      display: flex;
+      align-items: center;
+    }
+    
+    .row {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-evenly;
+      margin-top: 20px;
+    }
+  
+    .res-btn-cont {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin-top: 0vh;
+    }
+  
+    #back {
+      margin-top: 10vh;
+    }
+  
+    #archivate {
+      margin-top: 10vh;
+      margin-left: -10vw;
+    }
+  
+    .month {
+      color: aliceblue;
+      margin-left: 14vw;
+      font-size: 40px;
+    }
+    
+  
+    .left {
+      width: 100%;
+      max-width: 65vw;
+      min-width: 20vw;
+      height: 7vh;
+      background-color: #282c34;
+      border-radius: 10px;
+    }
+    
+    .left p {
+      margin-top: 12px;
+      margin-left: 12px;
+    }
+    
+    .right {
+      width: 100%;
+      max-width: 15vw;
+      height: 7vh;
+      background-color: #282c34;
+      border-radius: 10px;
+    }
+    
+    .right p {
+      margin-top: 12px;
+      margin-left: 3.7vw;
+    }  
+  
+  }
+  
+  @media only screen and (max-width: 300px) {
+  
+    .date-del-cont {
+      display: flex;
+      align-items: center;
+    }
+  
+    .month {
+      font-size: 25px;
+    }
+  
+  }
+  
